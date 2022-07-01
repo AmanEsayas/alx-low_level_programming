@@ -3,20 +3,29 @@
 #include <time.h>
 
 /**
- * main - Entry point
+ * main - checks if a number is positive, zero or negative
  * Return: Always 0 (Success)
  */
 
 int main(void)
 {
-	char letter;
+	int n;
 
-	for (letter = 'a'; letter <= 'z'; letter++)
-	{
-		if (letter != 'e' && letter != 'q')
-			putchar(letter);
-	}
-	putchar('\n');
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
+	if (n > 0)
+{
+	printf("%d is positive\n", n);
+}
+	else if (n == 0)
+{
+	printf("%d is zero\n", n);
+}
+	else
+{
+	printf("%d is negative\n", n);
+}
+
 	return (0);
 
 }
