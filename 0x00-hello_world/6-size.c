@@ -1,16 +1,16 @@
 #include<stdio.h>
 
-int main()
+int main(void)
 {
-	char a = 's';
-	int x = 16;
-	int y = 32;
-	int z = 999;
-	float s = 0.08f;
-	printf("Size of a char: %ld byte(s)\n", sizeof(a));
-	printf("Size of an int: %ld byte(s)\n", sizeof(x));
-	printf("Size of a long int: %li byte(s)\n", sizeof(y));
-	printf("Size of a long long int: %li byte(s)\n", sizeof(z));
-	printf("Size of a float: %ld byte(s)\n", sizeof(s));
+	char charType;
+	int intType;
+	long int longintType;
+	long long int longlongintType;
+	float floatType;
+	printf("Size of a char:% d byte(s)\n", sizeof(charType));
+	printf("Size of an int:% d byte(s)\n", sizeof(intType));
+	printf("Size of a long int:% d byte(s)\n", sizeof(longintType));
+	printf("Size of a long long int:% d byte(s)\n", sizeof(longlongintType));
+	printf("Size of a float:% d byte(s)\n", sizeof(floatType));
 	return (0);
 }
