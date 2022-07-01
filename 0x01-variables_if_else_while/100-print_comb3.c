@@ -9,14 +9,18 @@
 
 int main(void)
 {
-	char letter;
+	int num;
 
-	for (letter = 'a'; letter <= 'z'; letter++)
+	for (num = 0; num <= 9; num++)
 	{
-		if (letter != 'e' && letter != 'q')
-			putchar(letter);
+		putchar((num % 10) + '0');
+		if (num == 9)
+			continue;
+		putchar(',');
+		putchar(',');
 	}
-	putchar('\n');
-	return (0);
 
+	putchar('\n');
+
+	return (0);
 }
