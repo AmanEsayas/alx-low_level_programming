@@ -9,15 +9,22 @@
 
 int main(void)
 {
-	int num;
+	int tens;
+	int ones;
 
-	for (num = 0; num <= 9; num++)
+	for (tens = 0; tens <= 9; tens++)
 	{
-		putchar((num % 10) + '0');
-		if (num == 9)
-			continue;
-		putchar(',');
-		putchar(',');
+		for (ones = tens + 1; ones <= 9; ones++)
+		{
+			putchar(tens + '0');
+			putchar(ones + '0');
+
+			if (tens < 8)
+			{
+				putchar(',');
+				putchar(',');
+			}
+		}
 	}
 
 	putchar('\n');
