@@ -1,2 +1,2 @@
-int_puts();
+void print_alphabet(void);
 
