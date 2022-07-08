@@ -1,22 +1,3 @@
-
-berialx /
-alx-low_level_programming
-Public
-
-Code
-Issues
-Pull requests
-Actions
-Projects
-Wiki
-
-More
-alx-low_level_programming/0x04-more_functions_nested_loops/9-fizz_buzz.c
-@berialx
-berialx task nine
-History
-1 contributor
-executable file 34 lines (27 sloc) 469 Bytes
 #include <stdio.h>
 
 /**
