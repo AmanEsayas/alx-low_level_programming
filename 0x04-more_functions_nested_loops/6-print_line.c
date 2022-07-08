@@ -1,19 +1,18 @@
 #include "main.h"
 
 /**
-* print_line -> printing line
-* @n: integer params
-*/
+ * print_line - Draws a straight line using _
+ * @n: The number of character _
+ */
+
 void print_line(int n)
 {
-	int x;
+	int length;
 
-	if (n <= 0)
-		_putchar('\n');
-	else
+	if (n > 0)
 	{
-		for (x = 0; x < n; x++)
-			_putchar(95);
-		_putchar('\n');
+		for (length = 0; length < n; length++)
+			_putchar('_');
 	}
+	_putchar('\n');
 }

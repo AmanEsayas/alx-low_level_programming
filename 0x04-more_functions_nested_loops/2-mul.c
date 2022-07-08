@@ -1,11 +1,12 @@
 #include "main.h"
 
 /**
-* mul -> multiplying 2 numbers
-* @a: interger param1
-* @b: integer param 2
-* Return: success and intiger
-*/
+ * mul - multiplies two digits
+ * @a: the first number
+ * @b: the second number
+ *
+ * Return: Result
+ */
 
 int mul(int a, int b)
 {
